@@ -1,0 +1,5 @@
+[[proxy]]
+path = "src/liquid_locking_proxy.rs"
+[[proxy]]
+path = "interactor/src/proxy.rs"
+ 

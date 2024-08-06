@@ -1,0 +1,32 @@
+[package]
+name = "rust-interact"
+version = "0.0.0"
+authors = ["you"]
+edition = "2021"
+publish = false
+
+[[bin]]
+name = "rust-interact"
+path = "src/interactor_main.rs"
+
+[dependencies.liquid-locking]
+path = ".."
+
+[dependencies.multiversx-sc-snippets]
+version = "0.52.2"
+
+[dependencies.multiversx-sc]
+version = "0.52.2"
+
+[dependencies]
+clap = { version = "4.4.7", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8.6"
+reqwest = { version = "0.12.5", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde_json = "1.0"
+base64 = "0.22.1"
+hex = "0.4.3"
+
+# [workspace]
+
